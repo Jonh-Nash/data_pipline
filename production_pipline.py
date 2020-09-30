@@ -87,7 +87,7 @@ def call_slack_api(target):
                 'talk_user':[row['user']],
                 'text':[row['text']],
                 'reply_count':[row['reply_count']],
-                'reply_users_count':[row['reply_users_count']]
+                'reply_users_count':[row['reply_users_count']],
                 'target_date': target_date
                 })
             talks_all = talks_all.append(talk)
@@ -97,7 +97,7 @@ def call_slack_api(target):
                 'talk_id':[talk_id],
                 'ts':[row['ts']],
                 'talk_user':[row['user']],
-                'text':[row['text']]
+                'text':[row['text']],
                 'target_date': target_date
                 })
             talks_all = talks_all.append(talk)

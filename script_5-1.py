@@ -94,7 +94,7 @@ def call_slack_api(target):
                 'talk_user':[row['user']],
                 'text':[row['text']],
                 'reply_count':[row['reply_count']],
-                'reply_users_count':[row['reply_users_count']]
+                'reply_users_count':[row['reply_users_count']],
                 # 変更点 6. パーテーションのためのDate列を追加
                 'target_date': target_date
                 })
@@ -105,7 +105,7 @@ def call_slack_api(target):
                 'talk_id':[talk_id],
                 'ts':[row['ts']],
                 'talk_user':[row['user']],
-                'text':[row['text']]
+                'text':[row['text']],
                 # 変更点 6. パーテーションのためのDate列を追加
                 'target_date': target_date
                 })
