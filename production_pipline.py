@@ -22,7 +22,7 @@ def call_slack_api(target):
     talk_history = "https://slack.com/api/channels.history?count=1000&token=" + token + "&channel="
     target_date = target.strftime("%Y-%m-%d")
     oldest = target
-    latest = latest + datetime.timedelta(days=1)
+    latest = oldest + datetime.timedelta(days=1)
     payload = {
         "token":token
     }

@@ -25,7 +25,7 @@ def call_slack_api(target):
     target_date = target.strftime("%Y-%m-%d")
     # 変更点 7. 日次バッチ機能の追加
     oldest = target
-    latest = latest + datetime.timedelta(days=1)
+    latest = oldest + datetime.timedelta(days=1)
     payload = {
         "token":token
     }
